@@ -3,7 +3,7 @@ eeglab('nogui');
 clearvars('-except',list{:});
 
 
-addpath('.\aux_func_IO');
+%addpath('.\aux_func_IO');
 
 list=who;
 

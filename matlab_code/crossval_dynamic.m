@@ -34,7 +34,7 @@ for i=1:numel(task)
         table_temp_temp=table_temp;
         table_temp_temp.table=table_struct.table([id1;id2],:,n);
         table_temp_temp.class=table_struct.class([id1;id2]);
-        crossval_table(:,:,n)=crossval_FAS_1class_dynamic(table_temp_temp,n_rep);
+        crossval_table(:,:,n)=crossval_2class_dynamic(table_temp_temp,n_rep);
         end
         
         assignin('base',sprintf('Table_%s_%s',task(i),type(j)),crossval_table);

@@ -35,7 +35,7 @@ for i=1:numel(task)
         subplot(numel(task),numel(type),k);
         title(sprintf('%s-%s: High VS Low',task(i),type(j)));
         
-        crossval_table=crossval_FAS_1class(table_temp,n_rep);
+        crossval_table=crossval_2class(table_temp,n_rep);
 
         assignin('base',sprintf('Table_%s_%s',task(i),type(j)),crossval_table);
         
